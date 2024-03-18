@@ -357,9 +357,29 @@ a {
   }
 }
 .info-hint {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  padding-top: 12px;
   width: 112px;
   height: 56px;
   background-image: url("./../img/icons/tulltip.svg");
+}
+.info-hint__radio {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+.info-hint .info-hint__radio:checked + .info-hint__radio-fake {
+  border: 2px solid red;
+  background-image: url("./../img/icons/check.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .info-hint__radio-fake {
   flex-shrink: 0;
