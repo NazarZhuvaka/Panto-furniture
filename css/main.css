@@ -186,6 +186,51 @@ a {
     background-image: url("./../img/header-bg@2x.jpg");
   }
 }
+.header__content {
+  text-align: center;
+}
+.header__title {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 130%;
+  letter-spacing: -0.8px;
+  text-transform: capitalize;
+  margin-bottom: 14px;
+}
+.header__desc {
+  margin-inline: auto;
+  max-width: 606px;
+  font-size: 24px;
+  line-height: 160%;
+  opacity: 0.8;
+  margin-bottom: 45px;
+}
+.header .search-form {
+  display: flex;
+  max-width: 344px;
+  padding: 8px 8px 8px 20px;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  margin-inline: auto;
+  border-radius: 42px;
+  border: 0.862px solid rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+.header .search-form__input {
+  color: var(--c-white);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  background: none;
+  outline: none;
+  border: none;
+}
+.header .search-form__btn {
+  background: none;
+}
 .header__nav {
   display: grid;
   grid-template-columns: 2fr 8fr 2fr;
