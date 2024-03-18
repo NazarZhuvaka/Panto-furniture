@@ -1,4 +1,5 @@
 .header {
+  padding-top: 40px;
   background-color: var(--c-footer-bg);
   background-image: url("./../img/header-bg.jpg");
   background-size: cover;
@@ -7,26 +8,53 @@
   @include retina-bg(url("./../img/header-bg@2x.jpg"));
 
   &__nav {
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    gap: 20px;
   }
 
   &__logo {
+    align-self: center;
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 0.28px;
+    text-transform: capitalize;
   }
 
   &__cart {
-    &-img {
-    }
+    position: relative;
+
+    align-self: center;
+    justify-self: center;
+
   }
 }
-// .container {
-// }
 .nav-list {
-  &__item {
-  }
+  align-self: center;
+  justify-self: center;
 
-  &__link {
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 65px;
+
+  font-weight: 500;
+  font-size: 18px;
 }
 .cart {
   &__count {
+    position: absolute;
+    top: 3px;
+    right: -6px;
+    display: inline-block;
+    height: 25px;
+    padding: 0 6px;
+
+    border-radius: 40px;
+    background-color: var(--c-primary);
+
+    font-weight: 700;
+    line-height: 25px;
+    
   }
 }
