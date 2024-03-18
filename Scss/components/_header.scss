@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   padding-top: 40px;
   background-color: var(--c-footer-bg);
   background-image: url("./../img/header-bg.jpg");
@@ -9,11 +10,17 @@
 
   @include retina-bg(url("./../img/header-bg@2x.jpg"));
 
-  &__content{
+  &__dot-sofa {
+    position: absolute;
+    left: calc(296 * 100% / 1410);
+    top: calc(685 * 100% / 1075);
+  }
+
+  &__content {
     text-align: center;
   }
 
-  &__title{
+  &__title {
     font-weight: 700;
     font-size: 80px;
     line-height: 130%;
@@ -23,7 +30,7 @@
     margin-bottom: 14px;
   }
 
-  &__desc{
+  &__desc {
     margin-inline: auto;
     max-width: 606px;
     font-size: 24px;
@@ -32,7 +39,7 @@
     margin-bottom: 45px;
   }
 
-  .search-form{
+  .search-form {
     display: flex;
     max-width: 344px;
     padding: 8px 8px 8px 20px;
@@ -42,32 +49,31 @@
     margin-inline: auto;
 
     border-radius: 42px;
-    border: 0.862px solid rgba(255,255,255, 0.6);
-    background:  rgba(255,255,255, 0.15);
-    backdrop-filter: blur(4px) ;
-    &__input{
+    border: 0.862px solid rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+    &__input {
+      color: var(--c-white);
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 150%;
+
+      background: none;
+      outline: none;
+      border: none;
+
+      &::placeholder {
         color: var(--c-white);
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 150%;
-
-        background: none;
-        outline: none;
-        border: none;
-
-        &::placeholder{
-            color: var(--c-white); 
-            font-weight: 400;
-        }
+        font-weight: 400;
+      }
     }
 
-    &__btn{
-        width: 40px;
-        height: 40px;
-        border-radius: 24px;
-        background: var(--c-primary);
-        cursor: pointer;
-        
+    &__btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 24px;
+      background: var(--c-primary);
+      cursor: pointer;
     }
   }
 
@@ -91,7 +97,6 @@
 
     align-self: center;
     justify-self: center;
-
   }
 }
 .nav-list {
@@ -120,6 +125,5 @@
 
     font-weight: 700;
     line-height: 25px;
-    
   }
 }

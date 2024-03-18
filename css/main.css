@@ -174,6 +174,7 @@ a {
 }
 
 .header {
+  position: relative;
   padding-top: 40px;
   background-color: var(--c-footer-bg);
   background-image: url("./../img/header-bg.jpg");
@@ -185,6 +186,11 @@ a {
   .header {
     background-image: url("./../img/header-bg@2x.jpg");
   }
+}
+.header__dot-sofa {
+  position: absolute;
+  left: 20.9929078014%;
+  top: 63.7209302326%;
 }
 .header__content {
   text-align: center;
@@ -284,4 +290,11 @@ a {
   background-color: var(--c-primary);
   font-weight: 700;
   line-height: 25px;
+}
+
+.info-dot {
+  width: 10px;
+  height: 10px;
+  background-color: var(--c-white);
+  border-radius: 50%;
 }/*# sourceMappingURL=main.css.map */
