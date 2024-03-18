@@ -360,4 +360,22 @@ a {
   width: 112px;
   height: 56px;
   background-image: url("./../img/icons/tulltip.svg");
+}
+.info-hint__radio-fake {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  background-color: gray;
+  border: 2px solid white;
+  border-radius: 50%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.info-hint__radio-fake--orange {
+  background-color: var(--c-primary);
+}
+.info-hint__radio-fake--light-blue {
+  background-color: var(--c-light-blue);
+}
+.info-hint__radio-fake--gray {
+  background-color: var(--c-gray);
 }/*# sourceMappingURL=main.css.map */
