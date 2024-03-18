@@ -192,6 +192,21 @@ a {
   left: 20.9929078014%;
   top: 63.7209302326%;
 }
+.header__dot-vase {
+  position: absolute;
+  left: 8.085106383%;
+  top: 70.1395348837%;
+}
+.header__dot-item {
+  position: absolute;
+  left: 56.25%;
+  top: 72.6014760148%;
+}
+.header__dot-wall {
+  position: absolute;
+  right: 3.1944444444%;
+  top: 75.7380073801%;
+}
 .header__content {
   text-align: center;
 }

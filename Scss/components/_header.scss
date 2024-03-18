@@ -12,8 +12,25 @@
 
   &__dot-sofa {
     position: absolute;
-    left: calc(296 * 100% / 1410);
-    top: calc(685 * 100% / 1075);
+    left: calc(296 * 100% / ( 1440 - 30));
+    top: calc(685 * 100% / ( 1084 - 9));
+  }
+
+  &__dot-vase{
+    position: absolute;
+    left: calc(114 * 100% / ( 1440 - 30));
+    top: calc(754 * 100% / ( 1084 - 9));
+  }
+
+  &__dot-item{
+    position: absolute;
+    left: calc(810 * 100% / 1440 );
+    top: calc(787 * 100% / 1084);
+  }
+  &__dot-wall{
+    position: absolute;
+    right: calc(46 * 100% / 1440  );
+    top: calc(821 * 100% /  1084 );
   }
 
   &__content {
