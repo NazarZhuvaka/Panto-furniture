@@ -209,6 +209,7 @@ a {
   position: absolute;
   right: 3.1944444444%;
   top: 75.7380073801%;
+  transform: translate(25%, -15%);
 }
 .header__content {
   text-align: center;
@@ -326,6 +327,7 @@ a {
   height: 10px;
   border-radius: 50%;
   background-color: var(--c-white);
+  transition: var(--transition);
 }
 .info-dot__radius {
   width: 32px;
