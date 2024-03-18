@@ -48,16 +48,26 @@
     &__input{
         color: var(--c-white);
         font-size: 18px;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 150%;
-        
+
         background: none;
         outline: none;
         border: none;
+
+        &::placeholder{
+            color: var(--c-white); 
+            font-weight: 400;
+        }
     }
 
     &__btn{
-        background: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 24px;
+        background: var(--c-primary);
+        cursor: pointer;
+        
     }
   }
 

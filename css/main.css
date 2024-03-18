@@ -222,14 +222,26 @@ a {
 .header .search-form__input {
   color: var(--c-white);
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 150%;
   background: none;
   outline: none;
   border: none;
 }
+.header .search-form__input::-moz-placeholder {
+  color: var(--c-white);
+  font-weight: 400;
+}
+.header .search-form__input::placeholder {
+  color: var(--c-white);
+  font-weight: 400;
+}
 .header .search-form__btn {
-  background: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 24px;
+  background: var(--c-primary);
+  cursor: pointer;
 }
 .header__nav {
   display: grid;
