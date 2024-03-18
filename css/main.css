@@ -173,6 +173,10 @@ a {
   margin-inline: auto;
 }
 
+.none {
+  display: none !important;
+}
+
 .header {
   position: relative;
   padding-top: 40px;
@@ -357,6 +361,10 @@ a {
   }
 }
 .info-hint {
+  position: absolute;
+  left: 50%;
+  top: -26px;
+  transform: translate(-50%, -100%);
   display: flex;
   gap: 8px;
   justify-content: center;
@@ -376,7 +384,6 @@ a {
   width: 1px;
 }
 .info-hint .info-hint__radio:checked + .info-hint__radio-fake {
-  border: 2px solid red;
   background-image: url("./../img/icons/check.svg");
   background-repeat: no-repeat;
   background-position: center center;
