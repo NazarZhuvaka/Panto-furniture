@@ -1,0 +1,32 @@
+.header {
+  background-color: var(--c-footer-bg);
+  background-image: url("./../img/header-bg.jpg");
+  background-size: cover;
+  aspect-ratio: 1440 / 1084;
+
+  @include retina-bg(url("./../img/header-bg@2x.jpg"));
+
+  &__nav {
+  }
+
+  &__logo {
+  }
+
+  &__cart {
+    &-img {
+    }
+  }
+}
+.container {
+}
+.nav-list {
+  &__item {
+  }
+
+  &__link {
+  }
+}
+.cart {
+  &__count {
+  }
+}

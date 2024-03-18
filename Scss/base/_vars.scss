@@ -1,0 +1,33 @@
+$desktop-small: 1200px;
+$tablet: 992px;
+$tablet-small: 768px;
+$mobile: 576px;
+$mobile-small: 380px;
+
+:root {
+	--ff: 'Inter', sans-serif;
+	--ff-sec: 'DM Sans', sans-serif;
+	--transition: .2s all ease-in-out;
+
+
+	--c-white: #ffff;
+    --c-primary: #E58411;
+    --c-light-blue: #00D6C9;
+    --c-gray: #7C7C7C;
+
+    --c-footer-bg: #2D2F33;
+
+	--c-text: #1E1E1E;
+	--c-text-muted: #8D8D8D;
+	--c-card-dark: #0D1B39;
+    
+
+}
+
+// @media screen {
+// 	:root {
+// 		--font-h2-reg: 500 16px/45px var(--ff);
+// 	}
+// }
+
+// --font-h2-reg: 500 20px/45px var(--ff);
