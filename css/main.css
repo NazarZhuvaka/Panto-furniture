@@ -355,4 +355,9 @@ a {
   100% {
     transform: scale(1.2);
   }
+}
+.info-hint {
+  width: 112px;
+  height: 56px;
+  background-image: url("./../img/icons/tulltip.svg");
 }/*# sourceMappingURL=main.css.map */
