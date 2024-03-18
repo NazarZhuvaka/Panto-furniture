@@ -1,64 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Panto</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="container header__container">
+      <div class="container header__container">
+        <nav class="header__nav">
+          <a href="/" class="header__logo">Panto</a>
 
-            <nav class="header__nav">
-                <a href="/" class="header__logo">Panto</a>
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a href="/" class="nav-list__link">Furniture</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="/" class="nav-list__link">Shop</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="/" class="nav-list__link">About Us</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="/" class="nav-list__link">Contact</a>
+            </li>
+          </ul>
 
-                <ul class="nav-list">
-                    <li class="nav-list__item"><a href="/" class="nav-list__link">Furniture</a></li>
-                    <li class="nav-list__item"><a href="/" class="nav-list__link">Shop</a></li>
-                    <li class="nav-list__item"><a href="/" class="nav-list__link">About Us</a></li>
-                    <li class="nav-list__item"><a href="/" class="nav-list__link">Contact</a></li>
-                </ul>
+          <a href="/" class="header__cart">
+            <img
+              class="header__cart-img"
+              src="./img/icons/cart.svg"
+              alt="cart"
+            />
+            <span class="cart__count">0</span>
+          </a>
+        </nav>
 
-                
-                    <a href="/" class="header__cart" >
-                        <img class="header__cart-img" src="./img/icons/cart.svg" alt="cart">
-                        <span class="cart__count">0</span>
-                    </a>
-                
-            </nav>
+        <div class="header__content">
+          <h1 class="title header__title">
+            Make your interior more minimalistic & modern
+          </h1>
+          <p class="desc header__desc">
+            Turn your room with panto into a lot more minimalist and modern with
+            ease and speed
+          </p>
 
-            <div class="header__content">
-                <h1 class="title header__title">Make your interior more
-                    minimalistic & modern</h1>
-                <p class="desc header__desc" >Turn your room with panto into a lot more minimalist and modern with ease and speed</p>
-
-                <form action="" class="search-form">
-                    <input placeholder="Search furniture" type="text" class="search-form__input" autocomplete="off">
-                    <button class="search-form__btn">
-                        <img src="./img/icons/search.svg" alt="serch">
-                    </button>
-                </form>
-            </div>
-
-            <div class="header__dot-sofa">
-
-                <div class="info-dot"></div>
-            </div>
-            <div class="header__dot-vase">
-
-                <div class="info-dot"></div>
-            </div>
-            <div class="header__dot-item">
-
-                <div class="info-dot"></div>
-            </div>
-            <div class="header__dot-wall">
-
-                <div class="info-dot"></div>
-            </div>
-
+          <form action="" class="search-form">
+            <input
+              placeholder="Search furniture"
+              type="text"
+              class="search-form__input"
+              autocomplete="off"
+            />
+            <button class="search-form__btn">
+              <img src="./img/icons/search.svg" alt="serch" />
+            </button>
+          </form>
         </div>
+
+        <div class="header__dot-sofa">
+          <button class="info-dot"></button>
+        </div>
+        <div class="header__dot-vase">
+          <div class="info-dot"></div>
+        </div>
+        <div class="header__dot-item">
+          <div class="info-dot"></div>
+        </div>
+        <div class="header__dot-wall">
+          <div class="info-dot"></div>
+        </div>
+      </div>
     </header>
-</body>
+  </body>
 </html>
