@@ -79,13 +79,17 @@ for (let btn of tabsBtns) {
 
     // відобразити потрібні товари і hide непотрібні
     for (let product of tabsProducts){
-
-      if (product.dataset.tabValue === this.dataset.tab){
+      //провірка на all
+      if(this.dataset.tab === "all"){
         product.classList.remove('none')
       } else {
-        product.classList.add('none')
+        if (product.dataset.tabValue === this.dataset.tab){
+          product.classList.remove('none')
+        } else {
+          product.classList.add('none')
+        }
       }
-    
+
     }
 
     swiper.update()
