@@ -1,9 +1,6 @@
 .benefits {
     padding: 120px 0;
 
-    &__container {
-    }
-
     &__grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr );
@@ -11,7 +8,7 @@
     }
 
     &__title {
-        max-width: 260px;
+        max-width: 270px;
         font-size: 42px;
         font-weight: 700;
     }

@@ -416,7 +416,7 @@ a {
   gap: 20px;
 }
 .benefits__title {
-  max-width: 260px;
+  max-width: 270px;
   font-size: 42px;
   font-weight: 700;
 }
@@ -428,6 +428,7 @@ a {
   margin-bottom: 20px;
 }
 .benefit__text {
+  margin: 0;
   color: var(--c-text);
   margin-bottom: 14px;
   font-size: 16px;
@@ -435,12 +436,40 @@ a {
   line-height: 185%;
   opacity: 0.8;
 }
-.benefit__link {
+
+.products {
+  padding: 50px 0;
+  background-color: #f7f7f7;
+}
+.products__title {
+  font-size: 42px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 32px;
+  text-align: center;
+}
+.products__tabs {
+  margin-bottom: 80px;
+  text-align: center;
+}
+.products__slider {
+  margin-bottom: 60px;
+}
+.products__link {
+  text-align: center;
+}
+
+.read-more {
+  margin: 0;
+  display: inline-flex;
+  gap: 13px;
+  align-items: center;
   color: var(--c-primary);
   font-size: 14px;
   font-weight: 400;
   line-height: 185%;
 }
-.benefit__link::after {
+.read-more::after {
   content: url("./../img/icons/arrow-more.svg");
+  height: 22px;
 }/*# sourceMappingURL=main.css.map */
