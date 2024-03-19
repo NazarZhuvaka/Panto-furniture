@@ -526,6 +526,7 @@ a {
   border-radius: 20px 20px 0 0;
   background-color: #fafafa;
   text-align: center;
+  margin-top: 50px;
 }
 .card__desc {
   display: flex;
@@ -585,4 +586,9 @@ a {
 }
 .card__btn:hover {
   opacity: 0.8;
+}
+
+.slider {
+  display: flex;
+  gap: 42px;
 }/*# sourceMappingURL=main.css.map */
