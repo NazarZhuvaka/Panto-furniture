@@ -1,14 +1,48 @@
 .card {
-
+    
     width: 268px;
+
+    &__img{
+        margin-top: -50px;
+    }
 
     &__photo {
         height: 240px;
-        border-radius: 20px;
-        // background-color: #fafafa;
-        background-color: #f0d0d0;
+        border-radius: 20px 20px 0 0;
+        background-color: #fafafa;
+        text-align: center;
     }
 
     &__desc {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+
+        padding: 14px 22px 28px;
+
+        height: 202px;
+        border-radius: 0 0 20px 20px;
+        background-color: #fff;
+    }
+
+    &__categore {
+        
+    }
+
+    &__title {
+    }
+
+    &__raiting {
+    }
+
+    &__footer {
+        margin-top: auto;
+    }
+
+    &__price {
+    }
+
+    &__btn {
     }
 }
