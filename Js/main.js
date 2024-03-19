@@ -76,10 +76,20 @@ for (let btn of tabsBtns) {
     //добавити активний клас до данного кнопки
     this.classList.add('tab-controls__btn--active')
 
-    //отримуємо значення категоріїї  товарів які потрібно залишити
-    // this.dataset.tab
 
-    //оває всі товари 
+    // відобразити потрібні товари і hide непотрібні
+    for (let product of tabsProducts){
+
+      if (product.dataset.tabValue === this.dataset.tab){
+        product.classList.remove('none')
+      } else {
+        product.classList.add('none')
+      }
+    
+    }
+
+    swiper.update()
+
   });
 }
 
