@@ -497,10 +497,20 @@ a {
   font-weight: 500;
   line-height: 1.85;
   cursor: pointer;
+  transition: background-color 0.2s ease-in;
 }
 .tab-controls__btn:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
 .tab-controls__btn--active {
   background-color: #fff;
+}
+
+.card {
+  width: 268px;
+}
+.card__photo {
+  height: 240px;
+  border-radius: 20px;
+  background-color: #f0d0d0;
 }/*# sourceMappingURL=main.css.map */
