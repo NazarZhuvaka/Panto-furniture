@@ -28,7 +28,7 @@ for (let hint of infoHints) {
 }
 
 
-//<------------------------------------------------------------   Swiper
+//<-------------Swiper--------------->
 
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
@@ -60,3 +60,26 @@ const swiper = new Swiper('.swiper', {
 
   
 });
+
+
+//<-------------Tabs---------------->
+
+const tabsBtns = document.querySelectorAll('[data-tab]');
+const tabsProducts = document.querySelectorAll('[data-tab-value]');
+
+for (let btn of tabsBtns) {
+  btn.addEventListener("click", function () {
+    //убрати актів у всі
+    for (let btn of tabsBtns){
+      btn.classList.remove('tab-controls__btn--active')
+    }
+    //добавити активний клас до данного кнопки
+    this.classList.add('tab-controls__btn--active')
+
+    //отримуємо значення категоріїї  товарів які потрібно залишити
+    // this.dataset.tab
+
+    //оває всі товари 
+  });
+}
+
