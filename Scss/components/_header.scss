@@ -12,33 +12,33 @@
 
   &__dot-sofa {
     position: absolute;
-    left: calc(296 * 100% /  1440 );
-    top: calc(685 * 100% /  1084 );
+    left: calc(296 * 100% / 1440);
+    top: calc(685 * 100% / 1084);
 
-    transform: translate(-25%,-25%);
+    transform: translate(-25%, -25%);
   }
 
-  &__dot-vase{
+  &__dot-vase {
     position: absolute;
-    left: calc(114 * 100% /  1440 );
-    top: calc(754 * 100% /  1084 );
+    left: calc(114 * 100% / 1440);
+    top: calc(754 * 100% / 1084);
 
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
   }
 
-  &__dot-item{
+  &__dot-item {
     position: absolute;
-    left: calc(810 * 100% / 1440 );
+    left: calc(810 * 100% / 1440);
     top: calc(787 * 100% / 1084);
 
-    transform: translate(-50%,-25%);
+    transform: translate(-50%, -25%);
   }
-  &__dot-wall{
+  &__dot-wall {
     position: absolute;
-    right: calc(46 * 100% / 1440  );
-    top: calc(821 * 100% /  1084 );
+    right: calc(46 * 100% / 1440);
+    top: calc(821 * 100% / 1084);
 
-    transform: translate(25%,-15%);
+    transform: translate(25%, -15%);
   }
 
   &__content {
@@ -134,6 +134,48 @@
 
   font-weight: 500;
   font-size: 18px;
+  &__item{
+    position: relative;
+  }
+  &__sub-nav{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: calc(100% + 10px);
+
+    padding: 16px 25px;
+        border-radius: 10px;
+        background-color: var(--c-footer-bg);
+
+        color: var(--c-text-muted);
+        font-size: 16px;
+
+        a {
+            color: #fff;
+            transition: var(--transition);
+
+            &:hover{
+              color: var(--c-primary);
+              opacity: 0.8;
+            }
+        }
+  }
+
+  &__link {
+    transition: var(--transition);
+    &:hover{
+      color: var(--c-primary);
+    }
+    &--dropdown {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      &::after {
+        content: url(./../img/icons/drop-arrow.svg);
+        height: 18px;
+      }
+    }
+  }
 }
 .cart {
   &__count {

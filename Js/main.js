@@ -27,11 +27,10 @@ for (let hint of infoHints) {
   hint.addEventListener("click", (e) => e.stopPropagation());
 }
 
-
 //<-------------Swiper--------------->
 
-const swiper = new Swiper('.swiper', {
-  direction: 'horizontal',
+const swiper = new Swiper(".swiper", {
+  direction: "horizontal",
   loop: true,
   slidesPerView: 4,
   spaceBetween: 42,
@@ -54,46 +53,39 @@ const swiper = new Swiper('.swiper', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.slider__btn--next',
-    prevEl: '.slider__btn--prev',
+    nextEl: ".slider__btn--next",
+    prevEl: ".slider__btn--prev",
   },
-
-  
 });
-
 
 //<-------------Tabs---------------->
 
-const tabsBtns = document.querySelectorAll('[data-tab]');
-const tabsProducts = document.querySelectorAll('[data-tab-value]');
+const tabsBtns = document.querySelectorAll("[data-tab]");
+const tabsProducts = document.querySelectorAll("[data-tab-value]");
 
 for (let btn of tabsBtns) {
   btn.addEventListener("click", function () {
     //убрати актів у всі
-    for (let btn of tabsBtns){
-      btn.classList.remove('tab-controls__btn--active')
+    for (let btn of tabsBtns) {
+      btn.classList.remove("tab-controls__btn--active");
     }
     //добавити активний клас до данного кнопки
-    this.classList.add('tab-controls__btn--active')
-
+    this.classList.add("tab-controls__btn--active");
 
     // відобразити потрібні товари і hide непотрібні
-    for (let product of tabsProducts){
+    for (let product of tabsProducts) {
       //провірка на all
-      if(this.dataset.tab === "all"){
-        product.classList.remove('none')
+      if (this.dataset.tab === "all") {
+        product.classList.remove("none");
       } else {
-        if (product.dataset.tabValue === this.dataset.tab){
-          product.classList.remove('none')
+        if (product.dataset.tabValue === this.dataset.tab) {
+          product.classList.remove("none");
         } else {
-          product.classList.add('none')
+          product.classList.add("none");
         }
       }
-
     }
 
-    swiper.update()
-
+    swiper.update();
   });
 }
-
