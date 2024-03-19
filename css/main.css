@@ -639,6 +639,7 @@ a {
   margin-top: 1em;
 }
 .footer__desc p {
+  font-size: 14px;
   margin: 0;
 }
 .footer__logo {
@@ -651,11 +652,22 @@ a {
   grid-column-start: 3;
 }
 .footer__nav-title {
+  color: var(--c-primary);
+  font-family: var(--ff-sec);
+  font-size: 17px;
+  letter-spacing: -0.232px;
   margin-bottom: 20px;
 }
 .footer__links {
   display: flex;
   gap: 40px;
+}
+.footer__list {
+  display: grid;
+  gap: 16px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.6;
 }
 .logo {
   font-weight: 700;

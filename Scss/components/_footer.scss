@@ -32,6 +32,7 @@
         }
 
         p {
+            font-size: 14px;
             margin: 0;
         }
 		}
@@ -52,6 +53,10 @@
         }
 
         &-title {
+            color: var(--c-primary);
+            font-family: var(--ff-sec);
+            font-size: 17px;
+            letter-spacing: -0.232px;
             margin-bottom: 20px;
         }
     }
@@ -64,6 +69,11 @@
 
 
     &__list {
+        display: grid;
+        gap: 16px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 1.6;
     }
 
     &__list-item {
