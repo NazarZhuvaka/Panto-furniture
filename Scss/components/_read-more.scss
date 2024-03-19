@@ -14,4 +14,9 @@
         content: url('./../img/icons/arrow-more.svg');
         height: 22px;
     }
+
+    &--large{
+        font-size: 18px;
+        align-items: flex-start;
+    }
 }
