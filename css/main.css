@@ -509,6 +509,14 @@ a {
 .card {
   font-family: var(--ff-sec);
   width: 268px;
+  position: relative;
+}
+.card__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 .card__img {
   margin-top: -50px;
@@ -529,6 +537,8 @@ a {
   background-color: #fff;
 }
 .card__categore {
+  position: relative;
+  z-index: 3;
   color: var(--c-text-muted);
   font-size: 17px;
   margin: 0;
@@ -553,7 +563,6 @@ a {
   display: flex;
   align-items: flex-start;
   gap: 3px;
-  padding-left: 14px;
   color: var(--c-card-dark);
   font-size: 21px;
   font-weight: 600;
@@ -561,4 +570,19 @@ a {
 .card__price::before {
   content: attr(data-value);
   font-size: 15px;
+}
+.card__btn {
+  position: relative;
+  z-index: 3;
+  width: 48px;
+  height: 48px;
+  background-color: var(--c-card-dark);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+.card__btn:hover {
+  opacity: 0.8;
 }/*# sourceMappingURL=main.css.map */

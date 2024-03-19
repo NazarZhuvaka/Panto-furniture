@@ -3,6 +3,16 @@
 
     width: 268px;
 
+    position: relative;
+
+    &__link{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
     &__img{
         margin-top: -50px;
     }
@@ -28,6 +38,8 @@
     }
 
     &__categore {
+        position: relative;
+        z-index: 3;
         color: var(--c-text-muted);
         font-size: 17px;
         margin: 0;
@@ -58,7 +70,6 @@
         display: flex;
         align-items: flex-start;
         gap: 3px;
-        padding-left: 14px;
 
         color: var(--c-card-dark);
         font-size: 21px;
@@ -67,14 +78,27 @@
         &::before{
             content: attr(data-value);
 
-           
-
             font-size: 15px;
-
-
         }
     }
 
     &__btn {
+        position: relative;
+        z-index: 3;
+        
+        width: 48px;
+        height: 48px;
+        background-color: var(--c-card-dark);
+        border-radius: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transition: var(--transition);
+
+        &:hover{
+            opacity: 0.8;
+        }
     }
 }
