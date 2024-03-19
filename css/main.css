@@ -613,4 +613,27 @@ a {
   right: 0;
   top: 50%;
   transform: translate(50%, -50%);
+}
+
+.footer {
+  padding: 118px 0 56px;
+  background-color: var(--c-footer-bg);
+  color: rgba(255, 255, 255, 0.8);
+}
+.footer__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-grid {
+  margin-bottom: 118px;
+  display: grid;
+  grid-template-columns: 3fr 1fr 2fr 2fr 2fr;
+  gap: 20px;
+}
+.footer__container {
+  max-width: 1094px;
+}
+.footer__nav--services {
+  grid-column-start: 3;
 }/*# sourceMappingURL=main.css.map */

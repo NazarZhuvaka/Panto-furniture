@@ -31,7 +31,6 @@ for (let hint of infoHints) {
 //<------------------------------------------------------------   Swiper
 
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
   direction: 'horizontal',
   loop: true,
   slidesPerView: 4,
