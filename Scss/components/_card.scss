@@ -1,5 +1,6 @@
 .card {
-    
+    font-family: var(--ff-sec);
+
     width: 268px;
 
     &__img{
@@ -27,20 +28,51 @@
     }
 
     &__categore {
-        
+        color: var(--c-text-muted);
+        font-size: 17px;
+        margin: 0;
+
     }
 
     &__title {
+        margin: 0;
+        color: var(--c-card-dark);
+        font-size: 21px;
+        font-weight: 600;
     }
 
     &__raiting {
+        display: flex;
+        gap: 3px;
     }
 
     &__footer {
         margin-top: auto;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     &__price {
+        display: flex;
+        align-items: flex-start;
+        gap: 3px;
+        padding-left: 14px;
+
+        color: var(--c-card-dark);
+        font-size: 21px;
+        font-weight: 600;
+
+        &::before{
+            content: attr(data-value);
+
+           
+
+            font-size: 15px;
+
+
+        }
     }
 
     &__btn {
