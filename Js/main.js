@@ -32,22 +32,16 @@ for (let hint of infoHints) {
 
 const swiper = new Swiper('.swiper', {
   // Optional parameters
-  direction: 'vertical',
+  direction: 'horizontal',
   loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
+  slidesPerView: 4,
+  spaceBetween: 42,
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.slider__btn--next',
+    prevEl: '.slider__btn--prev',
   },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+  
 });

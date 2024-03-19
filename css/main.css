@@ -453,7 +453,6 @@ a {
   text-align: center;
 }
 .products__slider {
-  display: flex;
   margin-bottom: 60px;
 }
 .products__link {
@@ -590,8 +589,6 @@ a {
 }
 
 .slider {
-  display: flex;
-  gap: 42px;
   position: relative;
 }
 .slider__btn {
@@ -615,9 +612,4 @@ a {
   right: 0;
   top: 50%;
   transform: translate(50%, -50%);
-}
-
-.swiper {
-  width: 600px;
-  height: 300px;
 }/*# sourceMappingURL=main.css.map */
