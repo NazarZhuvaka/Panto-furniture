@@ -650,6 +650,9 @@ a {
 .footer__nav--services {
   grid-column-start: 3;
 }
+.footer__nav-title {
+  margin-bottom: 20px;
+}
 .footer__links {
   display: flex;
   gap: 40px;

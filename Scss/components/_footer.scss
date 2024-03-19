@@ -50,6 +50,10 @@
         &--services {
             grid-column-start: 3;
         }
+
+        &-title {
+            margin-bottom: 20px;
+        }
     }
 
 
@@ -58,9 +62,6 @@
         gap: 40px;
     }
 
-
-    &__nav-title {
-    }
 
     &__list {
     }
