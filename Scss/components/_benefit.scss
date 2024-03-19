@@ -1,0 +1,29 @@
+.benefit {
+
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        color: var(--c-text);
+        margin-bottom: 14px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 185%;
+        opacity: 0.8;
+    }
+
+    &__link {
+        color: var(--c-primary);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 185%;
+
+        &::after{
+            content: url('./../img/icons/arrow-more.svg');
+        }
+    }
+}
