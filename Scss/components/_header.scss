@@ -66,6 +66,7 @@
 
   .search-form {
     display: flex;
+    gap: 10px;
     max-width: 344px;
     padding: 8px 8px 8px 20px;
     justify-content: space-between;
@@ -78,6 +79,7 @@
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(4px);
     &__input {
+      flex-grow: 1;
       color: var(--c-white);
       font-size: 18px;
       font-weight: 500;
@@ -94,6 +96,7 @@
     }
 
     &__btn {
+      flex-shrink: 0;
       width: 40px;
       height: 40px;
       border-radius: 24px;

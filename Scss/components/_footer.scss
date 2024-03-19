@@ -1,87 +1,79 @@
 .footer {
-    padding: 118px 0 56px;
-    background-color: var(--c-footer-bg);
+  padding: 118px 0 56px;
+  background-color: var(--c-footer-bg);
+
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.6;
+
+  a {
     color: rgba(255, 255, 255, 0.8);
+    transition: var(--transition);
+    &:hover{
+        opacity: 0.6;
+    }
+  }
 
-    a{
-        color: rgba(255, 255, 255, 0.8); 
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-grid {
+    margin-bottom: 118px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 2fr 2fr 2fr;
+    gap: 20px;
+  }
+
+  &__desc {
+
+    p + p {
+      margin-top: 1em;
     }
 
-    &__row {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    p {
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 29px;
+  }
+
+  &__container {
+    max-width: 1094px;
+  }
+
+  &__nav {
+    &--services {
+      grid-column-start: 3;
     }
 
-    &-grid {
-        margin-bottom: 118px;
-        display: grid;
-        grid-template-columns: 3fr 1fr 2fr 2fr 2fr ;
-        gap: 20px;
+    &-title {
+      color: var(--c-primary);
+      font-family: var(--ff-sec);
+      font-size: 17px;
+      letter-spacing: -0.232px;
+      margin-bottom: 20px;
     }
+  }
 
-    
+  &__links {
+    display: flex;
+    gap: 40px;
+  }
 
-	&__desc {
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 1.6;
+  &__list {
+    display: grid;
+    gap: 16px;
+  }
 
-        p + p {
-            margin-top: 1em;
-        }
-
-        p {
-            font-size: 14px;
-            margin: 0;
-        }
-		}
-
-	&__logo {
-        margin-bottom: 29px;
-		}
-
-
-    &__container{
-        max-width: 1094px;
-    }
-
-    &__nav {
-
-        &--services {
-            grid-column-start: 3;
-        }
-
-        &-title {
-            color: var(--c-primary);
-            font-family: var(--ff-sec);
-            font-size: 17px;
-            letter-spacing: -0.232px;
-            margin-bottom: 20px;
-        }
-    }
-
-
-    &__links {
-        display: flex;
-        gap: 40px;
-    }
-
-
-    &__list {
-        display: grid;
-        gap: 16px;
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 1.6;
-    }
-
-    &__list-item {
-    }
+  &__copyright {
+    font-family: var(--ff-sec);
+    letter-spacing: -0.205px;
+  }
 }
-
-
-
-
-
-
