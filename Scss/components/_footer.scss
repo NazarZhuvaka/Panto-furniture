@@ -3,6 +3,10 @@
     background-color: var(--c-footer-bg);
     color: rgba(255, 255, 255, 0.8);
 
+    a{
+        color: rgba(255, 255, 255, 0.8); 
+    }
+
     &__row {
         display: flex;
         justify-content: space-between;
@@ -16,11 +20,29 @@
         gap: 20px;
     }
 
+    
+
+	&__desc {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 1.6;
+
+        p + p {
+            margin-top: 1em;
+        }
+
+        p {
+            margin: 0;
+        }
+		}
+
+	&__logo {
+        margin-bottom: 29px;
+		}
+
+
     &__container{
         max-width: 1094px;
-    }
-
-    &__desc {
     }
 
     &__nav {
@@ -30,14 +52,23 @@
         }
     }
 
-    &__copyright {
-    }
 
     &__links {
+        display: flex;
+        gap: 40px;
     }
 
-    
+
+    &__nav-title {
+    }
+
+    &__list {
+    }
+
+    &__list-item {
+    }
 }
+
 
 
 
