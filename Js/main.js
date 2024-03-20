@@ -1,6 +1,8 @@
 const infoBtns = document.querySelectorAll(".info-dot");
 const infoHints = document.querySelectorAll(".info-hint");
 
+
+
 //клік на btn з підсказкою
 for (let btn of infoBtns) {
   btn.addEventListener("click", showHint);
@@ -90,6 +92,20 @@ for (let btn of tabsBtns) {
   });
 }
 
+const mobileNavOpenBtn = document.querySelector("#open-mobile-nav-btn");
+const mobileNavCloseBtn = document.querySelector("#close-mobile-nav-btn");
+
+const mobileNav = document.querySelector("#mobile-nav");
+
+mobileNavOpenBtn.onclick = function () {
+  mobileNav.classList.add("mobile-nav-wrapper--open")
+
+}
+
+mobileNavCloseBtn.onclick = function () {
+  mobileNav.classList.remove("mobile-nav-wrapper--open")
+}
+
 
 //<------------------Now time Copyrighting----------->
 
@@ -107,3 +123,9 @@ window.onload = function() {
   }
   );
 }
+
+
+
+//mobile nav
+
+
