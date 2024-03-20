@@ -10,10 +10,6 @@
 
   @include retina-bg(url("./../img/header-bg@2x.jpg"));
 
-  // @include tablet {
-  //   position: static;
-  // }
-
   &__dot-sofa {
     position: absolute;
     left: calc(296 * 100% / 1440);
@@ -89,6 +85,10 @@
     border: 0.862px solid rgba(255, 255, 255, 0.6);
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(4px);
+
+    @include mobile{
+      display: none;
+    }
     &__input {
       flex-grow: 1;
       color: var(--c-white);

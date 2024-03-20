@@ -264,6 +264,11 @@ a {
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
 }
+@media (max-width: 576px) {
+  .header .search-form {
+    display: none;
+  }
+}
 .header .search-form__input {
   flex-grow: 1;
   color: var(--c-white);
