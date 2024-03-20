@@ -10,9 +10,9 @@
 
   @include retina-bg(url("./../img/header-bg@2x.jpg"));
 
-  @include tablet {
-    position: static;
-  }
+  // @include tablet {
+  //   position: static;
+  // }
 
   &__dot-sofa {
     position: absolute;
@@ -257,5 +257,12 @@
 
   @include tablet {
     display: block;
+  }
+}
+
+
+.header__dot{
+  @include tablet-midle {
+    display: none;
   }
 }

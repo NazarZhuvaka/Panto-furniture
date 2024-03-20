@@ -13,6 +13,12 @@
 	}
 }
 
+@mixin tablet-midle {
+	@media (max-width: $tablet-midle) {
+		@content;
+	}
+}
+
 @mixin tablet-small {
 	@media (max-width: $tablet-small) {
 		@content;
@@ -42,3 +48,4 @@
 		@content;
 	}
 }
+
