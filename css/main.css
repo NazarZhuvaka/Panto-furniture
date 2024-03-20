@@ -191,6 +191,11 @@ a {
     background-image: url("./../img/header-bg@2x.jpg");
   }
 }
+@media (max-width: 992px) {
+  .header {
+    position: static;
+  }
+}
 .header__dot-sofa {
   position: absolute;
   left: 20.5555555556%;
@@ -779,7 +784,23 @@ a {
   top: 0;
   bottom: 0;
   width: 320px;
-  padding: 30px 20px;
+  padding: 30px 30px;
   background-color: var(--c-footer-bg);
   color: var(--c-text-muted);
+}
+
+.mobile-nav {
+  display: grid;
+  gap: 20px;
+  font-size: 20px;
+}
+.mobile-sub-nav {
+  padding-top: 20px;
+  padding-left: 20px;
+  display: grid;
+  gap: 14px;
+  font-size: 16px;
+}
+.mobile-cart {
+  font-size: 22px;
 }/*# sourceMappingURL=main.css.map */

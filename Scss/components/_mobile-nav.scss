@@ -4,13 +4,16 @@
     top: 0;
     bottom: 0;
     width: 320px;
-    padding: 30px 20px;
+    padding: 30px 30px;
     background-color: var(--c-footer-bg);
     color:var(--c-text-muted);
 }
 .mobile-nav {
-
+    display: grid;
+        gap: 20px;
+        font-size: 20px;
     &__item {
+        
     }
 
     &__link {
@@ -19,11 +22,20 @@
     &__link--dropdown {
     }
 }
-.mobile-sub-nav {
 
+.mobile-sub-nav {
+    padding-top: 20px;
+    padding-left: 20px;
+    display: grid;
+    gap: 14px;
+    font-size: 16px;
     &__item {
     }
 
     &__link {
     }
+}
+
+.mobile-cart{
+    font-size: 22px;
 }
