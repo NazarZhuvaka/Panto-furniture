@@ -802,5 +802,12 @@ a {
   font-size: 16px;
 }
 .mobile-cart {
+  display: flex;
+  gap: 20px;
+  align-items: center;
   font-size: 22px;
+  font-weight: 500;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px;
 }/*# sourceMappingURL=main.css.map */
