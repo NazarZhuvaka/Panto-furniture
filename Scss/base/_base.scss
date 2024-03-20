@@ -4,12 +4,14 @@
 body {
   font-family: var(--ff);
   color: var(--c-text);
+  position: relative;
 }
 
 html._overflow {
   overflow: hidden;
 
   body {
+    
     overflow: hidden;
   }
 }
