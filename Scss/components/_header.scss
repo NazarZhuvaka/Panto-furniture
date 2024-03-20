@@ -134,6 +134,14 @@
 
   font-weight: 500;
   font-size: 18px;
+
+  @include tablet {
+    display: none;
+  }
+
+
+
+
   &__item {
     position: relative;
     padding-bottom: 10px;
@@ -226,5 +234,13 @@
 
   &:hover::before {
     width: calc(100% - 8px);
+  }
+}
+
+.nav__btn{
+  display: none;
+
+  @include tablet {
+    display: block;
   }
 }

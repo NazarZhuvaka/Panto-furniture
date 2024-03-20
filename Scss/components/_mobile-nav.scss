@@ -1,0 +1,29 @@
+.mobile-nav-wrapper{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 320px;
+    padding: 30px 20px;
+    background-color: var(--c-footer-bg);
+    color:var(--c-text-muted);
+}
+.mobile-nav {
+
+    &__item {
+    }
+
+    &__link {
+    }
+
+    &__link--dropdown {
+    }
+}
+.mobile-sub-nav {
+
+    &__item {
+    }
+
+    &__link {
+    }
+}
