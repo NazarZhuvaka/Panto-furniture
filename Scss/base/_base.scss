@@ -29,23 +29,13 @@ a {
   display: none !important;
 }
 
-// .btn {
-// 	display: inline-block;
-// 	cursor: pointer;
-// 	outline: 0;
-// 	border: 0;
-// 	border-radius: 5px;
-// 	padding: 13px 18px;
-// 	transition: var(--transition);
-
-// 	&_primary {
-// 		background: var(--c-primary);
-
-// 		&:hover {
-// 			background: darken($c-primary, 5%);
-// 		}
-// 	}
-// }
+.btn {
+	cursor: pointer;
+  background: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
 
 // .title {
 // 	margin-top: 90px;

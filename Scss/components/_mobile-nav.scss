@@ -1,4 +1,6 @@
 .mobile-nav-wrapper{
+    display: none;
+    z-index: 1;
     position: absolute;
     right: 0;
     top: 0;
@@ -7,6 +9,11 @@
     padding: 30px 30px;
     background-color: var(--c-footer-bg);
     color:var(--c-text-muted);
+
+    &--open {
+        display: block;
+    }
+    
 }
 .mobile-nav {
     display: grid;
@@ -36,13 +43,23 @@
     }
 }
 
+.mobile-nav-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255 , 0.2);
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
 .mobile-cart{
     display: flex;
     gap: 20px;
     align-items: center;
     font-size: 22px;
     font-weight: 500;
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgba(255, 255, 255 , 0.2);
-    margin-bottom: 20px;
+
+    flex-grow: 1;
+
 }
