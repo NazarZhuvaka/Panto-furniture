@@ -200,6 +200,13 @@ a {
     background-image: url("./../img/header-bg@2x.jpg");
   }
 }
+@media (max-width: 576px) {
+  .header {
+    padding-bottom: 140px;
+    background-position: center;
+    aspect-ratio: unset;
+  }
+}
 .header__dot-sofa {
   position: absolute;
   left: 20.5555555556%;
@@ -427,6 +434,14 @@ a {
   }
 }
 
+.header__cart-img {
+  max-width: unset;
+}
+
+.nav__btn-img {
+  max-width: unset;
+}
+
 .info-dot {
   position: relative;
   border: none;
@@ -613,6 +628,11 @@ a {
   border-radius: 44px;
   background-color: #eee;
 }
+@media (max-width: 576px) {
+  .tab-controls {
+    display: none;
+  }
+}
 .tab-controls__btn {
   height: 45px;
   padding: 7px 20px;
@@ -747,7 +767,7 @@ a {
 }
 
 .footer {
-  padding: 118px 0 56px;
+  padding: clamp(3.438rem, 1.563rem + 9.38vw, 7.375rem) 0 56px;
   background-color: var(--c-footer-bg);
   color: rgba(255, 255, 255, 0.8);
   font-weight: 500;
@@ -766,11 +786,18 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 576px) {
+  .footer__row {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
 .footer-grid {
   margin-bottom: 118px;
   display: grid;
   grid-template-columns: 3fr 1fr 2fr 2fr 2fr;
-  gap: 20px;
+  gap: 60px 20px;
 }
 @media (max-width: 992px) {
   .footer-grid {

@@ -7,6 +7,10 @@
     border-radius: 44px;
     background-color: #eee;
 
+    @include mobile {
+        display: none;
+    }
+
     &__btn {
         height: 45px;
         padding: 7px 20px;

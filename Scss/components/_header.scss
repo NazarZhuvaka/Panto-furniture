@@ -10,6 +10,12 @@
 
   @include retina-bg(url("./../img/header-bg@2x.jpg"));
 
+  @include mobile {
+    padding-bottom: 140px;
+    background-position: center;
+    aspect-ratio: unset;
+  }
+
   &__dot-sofa {
     position: absolute;
     left: calc(296 * 100% / 1440);
@@ -265,4 +271,12 @@
   @include tablet-midle {
     display: none;
   }
+}
+
+.header__cart-img{
+  max-width: unset;
+}
+
+.nav__btn-img{
+  max-width: unset;
 }
