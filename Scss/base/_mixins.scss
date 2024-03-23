@@ -7,6 +7,12 @@
 }
 
 // MEDIA QUERIES
+@mixin desktop {
+	@media (max-width: $desktop-small) {
+		@content;
+	}
+}
+
 @mixin desktop-small {
 	@media (max-width: $desktop-small) {
 		@content;

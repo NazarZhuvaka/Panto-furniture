@@ -26,6 +26,10 @@
     display: grid;
     grid-template-columns: 3fr 1fr 2fr 2fr 2fr;
     gap: 20px;
+
+    @include tablet {
+      grid-template-columns: 4fr 1fr 3fr 3fr;
+    }
   }
 
   &__desc {
