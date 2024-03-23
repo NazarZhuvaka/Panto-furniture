@@ -1,5 +1,5 @@
 .benefits {
-    padding: 120px 0;
+    padding: clamp(60px, 2.386rem + 6.82vw, 120px);
 
     &__grid {
         display: grid;
@@ -8,13 +8,13 @@
 
         @include tablet {
             grid-template-columns: repeat(auto-fit, minmax(310px, 1fr) );
-            gap: 60px 30px;
+            gap: clamp(30px, 0.982rem + 4.46vw, 60px) 30px;
         }
     }
 
     &__title {
         max-width: 270px;
-        font-size: 42px;
+        font-size: clamp(32px, 1.702rem + 1.49vw, 42px);
         font-weight: 700;
     }
 }
