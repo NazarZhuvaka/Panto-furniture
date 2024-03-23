@@ -5,6 +5,11 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr );
         gap: 20px;
+
+        @include tablet {
+            grid-template-columns: repeat(auto-fit, minmax(310px, 1fr) );
+            gap: 60px 30px;
+        }
     }
 
     &__title {
